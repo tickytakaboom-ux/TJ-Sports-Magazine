@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TJ Sports Magazine</title>
+    <style>
+      :root {
+        --bg: #f6fbff;
+        --surface: #ffffff;
+        --accent: #06b6d4;
+        --accent-hover: #0891b2;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: #cde7f3;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, Arial, sans-serif;
+        background: linear-gradient(180deg, #eef8ff 0%, var(--bg) 100%);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      main {
+        width: min(980px, 92vw);
+        padding: 2rem 1rem 2.5rem;
+      }
+      .logo-container {
+        margin-bottom: 1rem;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(1.9rem, 4vw, 3rem);
+        font-weight: 900;
+        line-height: 1.2;
+      }
+      .brand {
+        margin-top: 0.4rem;
+        display: inline-block;
+        font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+        font-weight: 800;
+        color: #0891b2;
+      }
+      .tagline {
+        font-size: 1.08rem;
+        max-width: 700px;
+        margin: 1rem auto 1.8rem;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+      .feature-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1rem;
+        text-align: left;
+        box-shadow: 0 8px 24px rgba(2, 132, 199, 0.08);
+      }
+      .feature-card h3 {
+        margin: 0 0 0.4rem;
+      }
+      .feature-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      .buttons {
+        display: flex;
+        gap: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1.6rem;
+      }
+      .btn {
+        background: var(--surface);
+        color: var(--text);
+        border: 1px solid var(--border);
+        padding: 0.9rem 1.1rem;
+        border-radius: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s ease;
+      }
+      .btn:hover {
+        border-color: var(--accent);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(6, 182, 212, 0.18);
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: white;
+        border-color: var(--accent);
+      }
+      .btn-primary:hover {
+        background: var(--accent-hover);
+        border-color: var(--accent-hover);
+      }
+      @media (max-width: 900px) {
+        .features {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 650px) {
+        .features {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="logo-container">
+        <h1>Bienvenue sur la nouvelle gazette sport mêlant actus, quiz et humour</h1>
+        <span class="brand">TJ Sports Magazine</span>
+      </div>
+
+      <p class="tagline">
+        Lis les actualités et teste tes connaissances sur tes sports préférés dans un espace
+        moderne, clair et fun.
+      </p>
+
+      <section class="features">
+        <article class="feature-card">
+          <h3>Profil</h3>
+          <p>Retrouve ton profil, ta progression et tes activités.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Actus Sports</h3>
+          <p>
+            Viens suivre les dernières actualités de tes sports préférés ainsi que les avis de nos
+            experts Timéo et Julian.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h3>SportsQuiz</h3>
+          <p>Teste tes connaissances et défie tes amis avec des quiz rapides.</p>
+        </article>
+      </section>
+
+      <div class="buttons">
+        <button class="btn btn-primary">🔐 Connexion</button>
+        <button class="btn" onclick="location.href='actus.html'">📺 Actus Sports</button>
+        <button class="btn" onclick="location.href='quiz.html'">🧠 SportsQuiz</button>
+        <button class="btn" onclick="location.href='communaute.html'">👥 Communauté</button>
+      </div>
+    </main>
+  </body>
+</html>
