@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz du jour • TJ Sports Magazine</title>
+    <style>
+      :root {
+        --bg: #f6fbff;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #0ea5e9;
+        --border: #cde7f3;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, Segoe UI, Arial, sans-serif;
+        background: linear-gradient(180deg, #eef8ff 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+      .page {
+        width: min(820px, 92vw);
+        margin: 2rem auto;
+        padding: 1.6rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(2, 132, 199, 0.08);
+      }
+      h1 { margin-top: 0; }
+      p, li { color: var(--muted); line-height: 1.6; }
+      a { color: var(--accent); font-weight: 700; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <h1>Quiz du jour</h1>
+      <p>Un mini quiz quotidien multisport pour garder un rythme régulier.</p>
+      <ul>
+        <li>5 questions par jour</li>
+        <li>Score instantané</li>
+        <li>Classement hebdomadaire entre amis</li>
+      </ul>
+      <p><a href="index.html">← Retour à l'accueil</a></p>
+    </main>
+  </body>
+</html>
